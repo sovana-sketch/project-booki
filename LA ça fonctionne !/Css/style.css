@@ -501,19 +501,10 @@ div .hebergements-cards .card-title {
 @media (max-width: 767.98px) {
     .main-container {
         width: 100%;
-
-
         padding: 0 20px;
     }
 
-    .main-container main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-self: stretch;
-    }
-
+ 
     .logo {
         display: flex;
         flex-direction: column;
@@ -541,7 +532,7 @@ div .hebergements-cards .card-title {
         width: 20%;
     }
 
-    /* classer les liens */
+    
     .button-nav {
         display: flex;
         gap: 50%;
@@ -560,10 +551,6 @@ div .hebergements-cards .card-title {
 
     }
 
-    .button-nav li {
-        display: flex;
-        justify-self: space-between;
-    }
 
     .button-nav a:hover {
         color: var(--main-color);
@@ -573,104 +560,37 @@ div .hebergements-cards .card-title {
     }
 
     /* Info group */
-    .info-group {
-        padding-top: 35px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-content: center;
-        gap: 35px;
-        align-self: stretch;
-    }
-
-    form {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        height: 50px;
-        gap: 24px;
+    
+ 
 
 
-    }
-
-    form button {
-        border: 1px;
-        padding: 15px 16px;
-
-    }
-
-    .button1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40px;
-        background-color: var(--main-bg-color);
-        border-radius: 15px 0px 0px 15px;
-    }
-
-    .search::placeholder {
-        opacity: 1;
-        color: black;
-        font-weight: 700;
-
-    }
-
-    .search {
-        border: var(--main-bg-color);
-    }
-
-    .button2 {
-        font-weight: 700;
-        border-radius: 0px 15px 15px 0px;
-        color: var(--main-bg-color);
-        background-color: var(--main-color);
-    }
+  
 
 
     .filter {
         display: flex;
-        flex-direction: column;
+        flex-flow:column ;
         justify-content: center;
         align-items: flex-start;
         gap: 20px;
         align-self: stretch;
     }
 
-    .filter ul {
-        display: flex;
-        gap: 15px;
-    }
+.filter ul {
+    display: flex;
+    flex-wrap: wrap;
+  
+    
+}
 
-    .filter li:hover {
-        background-color: var(--filter-bg-color);
-
-    }
-
-    .filter i {
-        width: 22px;
-        height: 22px;
-
-    }
-
+    
     .filter li {
         border: 2px solid var(--filter-bg-color);
-        border-radius: 25px;
-        display: inline-flex;
-        height: 50px;
-        padding: 4px 19px;
-        align-items: center;
-        gap: 10px;
-        flex-shrink: 0;
+       
+       
     }
 
-    .info-legendes {
-        display: flex;
-        height: 24px;
-        align-items: center;
-        gap: 10px;
-        align-self: stretch;
-    }
+   
 
     
    
@@ -687,6 +607,7 @@ div .hebergements-cards .card-title {
 .info-feet {
     display: flex;
     flex-direction: column;
+    
 }
 
 
@@ -700,12 +621,7 @@ div .hebergements-cards .card-title {
 
 .hebergements-cards {
     display: flex;
-    padding: 30px 0px;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 30px;
-    align-self: stretch;
+    flex-flow: column ;
 }
 
 
@@ -721,12 +637,8 @@ div .hebergements-cards .card-title {
 .activites-card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    flex: 1 0 0;
-    gap: 30px;
-
+   
 }
 
 
 }
-
